@@ -1,0 +1,16 @@
+.Container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 30rem;
+    height: 30rem;
+
+    background-color: #fff;
+
+    h1{
+        color: #000;
+    }
+}
