@@ -30,7 +30,13 @@ body {
   align-content: center;
   justify-content: center;
   place-items: center;
-  
+
   min-width: auto;
   min-height: 100vh;
+
+  background-image: url("./assets/Techwallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
