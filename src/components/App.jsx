@@ -38,11 +38,11 @@ function App() {
               <p>Frontend Developer - Digital Designer</p>
             </div>
 
-            <div className="links">
+
               <LinkButton text={"Go to my website"} />
               <LinkButton text={"My Work Portfolio"} />
               <LinkButton text={"Download CV"} />
-            </div>
+
 
             <div className="socialNetworks">
               <h3>{socialNetwork}</h3>
