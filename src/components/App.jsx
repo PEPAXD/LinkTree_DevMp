@@ -7,11 +7,11 @@ import SocialButton from "./SocialButton";
 import devImg from "../assets/devImg.png";
 
 const socialNetworksData = [
-  { icon: "linkedin", text: "mauro-pepa-dev" },
-  { icon: "instagram", text: "@mauropepa97" },
-  { icon: "github", text: "PEPAXD" },
-  { icon: "whatsapp", text: "ARG +549 3541-628524" },
-  { icon: "mail", text: "mauropepa1997oficial@gmail.com" },
+  { icon: "linkedin", text: "mauro-pepa-dev"},
+  { icon: "instagram", text: "@mauropepa97"},
+  { icon: "github", text: "PEPAXD"},
+  { icon: "whatsapp", text: "ARG +549 3541-628524"},
+  { icon: "mail", text: "mauropepa1997oficial@gmail.com"},
 ];
 
 function App() {
