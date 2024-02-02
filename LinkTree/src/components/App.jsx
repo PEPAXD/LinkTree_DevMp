@@ -1,11 +1,11 @@
-import "./styles/LinkTreeCard.scss";
+import "./styles/App.scss";
 
 function App() {
   return (
     <>
       <div className="shadowWallpaper">
-        <div className="Container">
-          <h1>First Commit!!!</h1>
+        <div className="container">
+          <div className="card"></div>
         </div>
       </div>
     </>
