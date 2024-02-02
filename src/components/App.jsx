@@ -7,24 +7,27 @@ import SocialButton from "./SocialButton";
 import devImg from "../assets/devImg.png";
 
 const socialNetworksData = [
-  { icon: "linkedin", text: "mauro-pepa-dev"},
-  { icon: "instagram", text: "@mauropepa97"},
-  { icon: "github", text: "PEPAXD"},
-  { icon: "whatsapp", text: "ARG +549 3541-628524"},
-  { icon: "mail", text: "mauropepa1997oficial@gmail.com"},
+  { icon: "linkedin", text: "mauro-pepa-dev", color: "#0077B5"},
+  { icon: "instagram", text: "@mauropepa97", color: "#C13584"},
+  { icon: "github", text: "PEPAXD", color: "#333"},
+  { icon: "whatsapp", text: "ARG +549 3541-628524", color: "#25D366"},
+  { icon: "mail", text: "mauropepa1997oficial@gmail.com", color: "#D44638"},
 ];
 
 function App() {
 
   // Print-SocialNetworks-Name
   const [socialNetwork, setSocialNetwork] = useState("CONTACT ME!");
+  const [color, setColor] = useState('#000');
 
-  const handleMouseOver = (networkName) => {
+  const handleMouseOver = (networkName, networkColor) => {
     setSocialNetwork(networkName);
+    setColor(networkColor);
   };
 
   const handleMouseOut = () => {
     setSocialNetwork("CONTACT ME!");
+    setColor('#000');
   };
 
   return (
@@ -45,14 +48,14 @@ function App() {
 
 
             <div className="socialNetworks">
-              <h3>{socialNetwork}</h3>
+            <h3 style={{ color: color }}>{socialNetwork}</h3>
               <div className="bottomLine"></div>
               <div className="containerSocialButtons">
                 {socialNetworksData.map((network) => (
                   <SocialButton
                     key={network.icon}
                     icon={network.icon}
-                    onMouseOver={() => handleMouseOver(network.text)}
+                    onMouseOver={() => handleMouseOver(network.text, network.color)}
                     onMouseOut={handleMouseOut}
                   />
                 ))}
