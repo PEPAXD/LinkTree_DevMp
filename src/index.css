@@ -53,9 +53,3 @@ footer {
   font-weight: bold;
   color: #fff;
 }
-
-@media screen and (max-width: 400px){
-  footer {
-    font-size: 0.6em;
-  }
-}

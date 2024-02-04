@@ -7,7 +7,11 @@ import devImg from "../assets/devImg.png";
 const linksButtons = [
   { text: "Go to my website", href: "https://www.mauropepacvwebsite.com" },
   { text: "My Work Portfolio", href: "https://github.com/PEPAXD?tab=stars" },
-  { text: "Download CV", onClick: () => window.open("/CV PEPA.pdf", "_blank") },
+  {
+    text: "Download CV",
+    onClick: () =>
+      window.open(process.env.PUBLIC_URL + "/CV PEPA.pdf", "_blank"),
+  },
 ];
 
 const socialNetworksData = [
@@ -33,45 +37,40 @@ function App() {
   };
 
   return (
+    <div className="shadowWallpaper">
+      <div className="container">
+        <div className="card">
+          <div className="devData">
+            <img src={devImg} alt="MyPhoto" className="DevImg" />
+            <h1>Mauro Exequiel Pepa</h1>
+            <p>Frontend Developer - Digital Designer</p>
+          </div>
 
-      <div className="shadowWallpaper">
-        <div className="container">
-          <div className="card">
-            <div className="devData">
-              <img src={devImg} alt="MyPhoto" className="DevImg" />
-              <h1>Mauro Exequiel Pepa</h1>
-              <p>Frontend Developer - Digital Designer</p>
-            </div>
+          <div className="containersLinks">
+            {linksButtons.map((button, index) => (
+              <LinkButton key={index} {...button} />
+            ))}
+          </div>
 
-            <div className="containersLinks">
-              {linksButtons.map((button, index) => (
-                <LinkButton key={index} {...button} />
+          <div className="socialNetworks">
+            <h3 style={{ color: color }}>{socialNetwork}</h3>
+            <div className="bottomLine"></div>
+            <div className="containerSocialButtons">
+              {socialNetworksData.map((network) => (
+                <SocialButton
+                  key={network.icon}
+                  icon={network.icon}
+                  onMouseOver={() =>
+                    handleMouseOver(network.text, network.color)
+                  }
+                  onMouseOut={handleMouseOut}
+                />
               ))}
-            </div>
-
-            <div className="socialNetworks">
-              <h3 style={{ color: color }}>{socialNetwork}</h3>
-              <div className="bottomLine"></div>
-              <div className="containerSocialButtons">
-                {socialNetworksData.map((network) => (
-                  <SocialButton
-                    key={network.icon}
-                    icon={network.icon}
-                    onMouseOver={() =>
-                      handleMouseOver(network.text, network.color)
-                    }
-                    onMouseOut={handleMouseOut}
-                  />
-                ))}
-              </div>
             </div>
           </div>
         </div>
-
-
       </div>
-
-
+    </div>
   );
 }
 
