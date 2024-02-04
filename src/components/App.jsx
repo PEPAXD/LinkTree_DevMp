@@ -10,7 +10,7 @@ const linksButtons = [
   {
     text: "Download CV",
     onClick: () =>
-      window.open("CV PEPA.pdf", "_blank"),
+    window.open("/LinkTree_DevMp/CV PEPA.pdf", "_blank"),
   },
 ];
 
