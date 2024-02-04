@@ -15,7 +15,7 @@ const socialNetworksData = [
 ];
 
 const linkA = "https://www.mauropepacvwebsite.com";
-const linkB = "https://github.com/PEPAXD";
+const linkB = "https://github.com/PEPAXD?tab=stars";
 
 function App() {
 

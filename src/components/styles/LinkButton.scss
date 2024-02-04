@@ -10,13 +10,13 @@
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
 
   cursor: pointer;
   transition-duration: 0.4s;
 
   &:hover {
-    background-color: rgb(85, 85, 85);
+    background-color: #283844;
     color: white;
   }
   &:active {
