@@ -19,6 +19,7 @@
   outline: none;
   border: none;
   text-decoration: none;
+  overflow: hidden;
 
 }
 
@@ -47,8 +48,14 @@ footer {
   height: 5%;
   width: 100%;
 
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
+}
+
+@media screen and (max-width: 400px){
+  footer {
+    font-size: 0.6em;
+  }
 }

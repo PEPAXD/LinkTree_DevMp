@@ -27,7 +27,7 @@
   justify-content: center;
 
   width: 30%;
-  height: auto;
+
 
   
 }
@@ -46,9 +46,7 @@
   
   background: white;
 
-  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-  0 0  0 2px rgb(190, 190, 190),
-  0.3em 0.3em 1em rgba(0,0,0,0.3);
+
   transition: all 0.25s ease;
 }
 
@@ -131,7 +129,7 @@
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
   .container{
     width: 50%;
 
@@ -147,9 +145,24 @@
   }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
   .container{
     width: 80%;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .container{
+    width: 90%;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .container{
     font-size: 0.7em;
   }
 }
+
+
