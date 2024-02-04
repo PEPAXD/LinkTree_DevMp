@@ -33,40 +33,45 @@ function App() {
   };
 
   return (
-    <div className="shadowWallpaper">
-      <div className="container">
-        <div className="card">
-          <div className="devData">
-            <img src={devImg} alt="MyPhoto" className="DevImg" />
-            <h1>Mauro Exequiel Pepa</h1>
-            <p>Frontend Developer - Digital Designer</p>
-          </div>
 
-          <div className="containersLinks">
-            {linksButtons.map((button, index) => (
-              <LinkButton key={index} {...button} />
-            ))}
-          </div>
+      <div className="shadowWallpaper">
+        <div className="container">
+          <div className="card">
+            <div className="devData">
+              <img src={devImg} alt="MyPhoto" className="DevImg" />
+              <h1>Mauro Exequiel Pepa</h1>
+              <p>Frontend Developer - Digital Designer</p>
+            </div>
 
-          <div className="socialNetworks">
-            <h3 style={{ color: color }}>{socialNetwork}</h3>
-            <div className="bottomLine"></div>
-            <div className="containerSocialButtons">
-              {socialNetworksData.map((network) => (
-                <SocialButton
-                  key={network.icon}
-                  icon={network.icon}
-                  onMouseOver={() =>
-                    handleMouseOver(network.text, network.color)
-                  }
-                  onMouseOut={handleMouseOut}
-                />
+            <div className="containersLinks">
+              {linksButtons.map((button, index) => (
+                <LinkButton key={index} {...button} />
               ))}
+            </div>
+
+            <div className="socialNetworks">
+              <h3 style={{ color: color }}>{socialNetwork}</h3>
+              <div className="bottomLine"></div>
+              <div className="containerSocialButtons">
+                {socialNetworksData.map((network) => (
+                  <SocialButton
+                    key={network.icon}
+                    icon={network.icon}
+                    onMouseOver={() =>
+                      handleMouseOver(network.text, network.color)
+                    }
+                    onMouseOut={handleMouseOut}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
+
+
       </div>
-    </div>
+
+
   );
 }
 
