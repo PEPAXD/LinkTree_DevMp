@@ -10,7 +10,7 @@ const linksButtons = [
   {
     text: "Download CV",
     onClick: () =>
-      window.open(process.env.PUBLIC_URL + "/CV PEPA.pdf", "_blank"),
+      window.open("LinkTree_DevMp/CV PEPA.pdf", "_blank"),
   },
 ];
 
